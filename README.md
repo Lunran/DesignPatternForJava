@@ -2,7 +2,11 @@
 
 This is just yet another transcription of  "増補改訂版 Java言語で学ぶデザインパターン入門" for self-learning.
 
-Details may differ from the original sample code ( http://www.hyuki.com/dp/#download ).
+The differences from the original sample code ( http://www.hyuki.com/dp/#download ) are
+
+- each pattern is a maven project
+- unit tests are added in TDD manner
+- program details may differ
 
 
 # Original License of "増補改訂版 Java言語で学ぶデザインパターン入門"
