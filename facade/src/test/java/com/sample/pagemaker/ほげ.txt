@@ -1,0 +1,3 @@
+hoge@hoge.com=hoge hoge
+ほげ@ほげ.com=ほげ田ほげ夫
+
