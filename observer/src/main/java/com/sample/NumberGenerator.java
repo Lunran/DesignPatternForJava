@@ -27,7 +27,7 @@ public abstract class NumberGenerator {
 		}
 	}
 
-	public abstract void generateNumber();
+	protected abstract void generateNumber();
 
 	private List<Observer> observers = new ArrayList<>();
 
@@ -35,7 +35,7 @@ public abstract class NumberGenerator {
 		observers.add(observer);
 	}
 
-	public void notifyObservers() {
+	private void notifyObservers() {
 		for (Observer observer: observers) {
 			observer.update(this);
 		}
