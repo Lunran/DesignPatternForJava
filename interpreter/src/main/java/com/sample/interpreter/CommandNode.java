@@ -1,4 +1,4 @@
-package com.sample;
+package com.sample.interpreter;
 
 /**
  * BNF: <command> ::= <repeat command> | <primitive command>
@@ -23,5 +23,10 @@ public class CommandNode extends Node {
 	@Override
 	public String toString() {
 		return node.toString();
+	}
+
+	@Override
+	public void draw(DrawCanvas canvas) {
+		node.draw(canvas);
 	}
 }

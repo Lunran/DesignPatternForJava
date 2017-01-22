@@ -1,4 +1,4 @@
-package com.sample;
+package com.sample.interpreter;
 
 /**
  * BNF: <repeat command> ::= repeat <number> <command list>
@@ -21,5 +21,12 @@ public class RepeatCommandNode extends Node {
 	@Override
 	public String toString() {
 		return "[repeat " + number + " " + commandListNode + "]";
+	}
+
+	@Override
+	public void draw(DrawCanvas canvas) {
+		for (int i=0; i<number; i++) {
+			commandListNode.draw(canvas);
+		}
 	}
 }

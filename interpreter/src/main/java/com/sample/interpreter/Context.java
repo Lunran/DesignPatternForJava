@@ -1,4 +1,4 @@
-package com.sample;
+package com.sample.interpreter;
 
 import java.util.StringTokenizer;
 

@@ -1,4 +1,4 @@
-package com.sample;
+package com.sample.interpreter;
 
 /**
  * BNF: <program> ::= program <command list>
@@ -18,5 +18,10 @@ public class ProgramNode extends Node {
 	@Override
 	public String toString() {
 		return "[program " + commandListNode + "]";
+	}
+
+	@Override
+	public void draw(DrawCanvas canvas) {
+		commandListNode.draw(canvas);
 	}
 }

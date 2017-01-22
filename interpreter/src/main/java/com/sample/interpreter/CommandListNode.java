@@ -1,4 +1,4 @@
-package com.sample;
+package com.sample.interpreter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,5 +32,12 @@ public class CommandListNode extends Node {
 	@Override
 	public String toString() {
 		return list.toString();
+	}
+
+	@Override
+	public void draw(DrawCanvas canvas) {
+		for (Node n: list) {
+			n.draw(canvas);
+		}
 	}
 }
